@@ -1,11 +1,16 @@
 import { InputHTMLAttributes } from "react";
 import '../input/input.css'
-interface InputProps extends InputHTMLAttributes<HTMLInputElement>{}
+interface InputProps extends InputHTMLAttributes<HTMLInputElement>{
+    label: string
+}
 
 export function Input( props : InputProps) {
     return(
-        <input
-            {...props}
-        />
+        <>
+            <label>{props.label}</label>
+            <input
+                {...props}
+            />
+        </>
     )
 }
