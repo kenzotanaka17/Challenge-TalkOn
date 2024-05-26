@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@500;700&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+input {
+    width: 33.5rem;
+    height: 4.5rem;
+    border-radius: 5rem;
+    background-color: #ffffff;
+    color: #101010;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.219rem;
+    letter-spacing: 0.05rem;
+    padding: 1.15rem 1.65rem;
+}
+
+::-webkit-input-placeholder {
+    color: #c6c6c6;
+}
