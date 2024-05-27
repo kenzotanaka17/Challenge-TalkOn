@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.iconPlus {
+    background-color: #486b7d;
+    color: #ffffff;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+}

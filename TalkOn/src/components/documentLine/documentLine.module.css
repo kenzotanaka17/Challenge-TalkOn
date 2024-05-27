@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+.line {
+    border-top: 1px solid #a6a6a6;
+    margin-left: 2rem;
+    width: 93rem;
+    display: flex;
+    align-items: center;
+    height: 7rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
+
+.line .lineId {
+    position: absolute;
+    left: 43rem;
+}
+
+.line .lineName {
+    position: absolute;
+    left: 54rem;
+}
+
+.line div {
+    position: absolute;
+    left: 96.5rem;
+}
+
+.line .image {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 1.88rem;
+    position: absolute;
+    left: 120rem;
+}
+
+.line:hover {
+    cursor: pointer;
+    background-color: #a3b5be;
+    transition: .1s;
+}
