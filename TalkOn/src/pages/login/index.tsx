@@ -1,5 +1,5 @@
 import { useState, FormEvent } from 'react'
-import './login.css'
+import styles from './login.module.css'
 import { Input } from '../../components/input/input'; 
 import { useNavigate } from 'react-router-dom';
 
@@ -8,22 +8,22 @@ export function Login() {
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
+  // dados mockados
+
   function onHandleLogin(e: FormEvent) {
     e.preventDefault();
-    if(email !== '' && password !== '') {
+    if(email == 'giovanna.medeiros@eurofarma.com' && password == '123') {
       navigate("/docs-management", {replace: true})
-    } else if(email !== '') {
-      alert("Preencha o campo de senha")
-    } else alert('Preencha o campo de email')
+    }  else alert("Dados incorretos")
   }
   
   return (
-    <div className='container'>
-      <div className='login-box'>
-        <h1 className='title'>TalkOn</h1>
-        <h2 className='subtitle'>Management</h2>
+    <div className={styles.container}>
+      <div className={styles.loginBox}>
+        <h1 className={styles.title}>TalkOn</h1>
+        <h2 className={styles.subtitle}>Management</h2>
 
-      <form onSubmit={onHandleLogin} className='form'>
+      <form onSubmit={onHandleLogin} className={styles.form}>
         <Input
         label='E-mail' 
         placeholder='usuario@gmail.com'

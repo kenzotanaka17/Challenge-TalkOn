@@ -18,7 +18,7 @@ html {
     background-color: #002740;
 }
 
-.login-box {
+.loginBox {
     background-color: #667d8c;
     width: 41.5rem;
     height: 43.3rem;
@@ -31,17 +31,16 @@ html {
     padding: 4rem;
     gap: 1.7rem;
     box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.25), -8px -8px 10px 0px rgba(0, 0, 0, 0.25);
-
 }
 
-.login-box .title {
+.loginBox .title {
     font-family: "Inter", sans-serif;
     font-size: 6.4rem;
     font-weight: 800;
     line-height: 7.745rem;
 }
 
-.login-box .subtitle {
+.loginBox .subtitle {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 1.5rem;
@@ -50,7 +49,7 @@ html {
     color: #000000;
 }
 
-.login-box form {
+.loginBox form {
     display: flex;
     flex-direction: column;
     justify-content: center;
