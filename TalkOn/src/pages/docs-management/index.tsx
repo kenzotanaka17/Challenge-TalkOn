@@ -1,10 +1,9 @@
 import { useState } from "react"
 import styles from './docs-management.module.css'
-import profileImg from '../../assets/profileImg.png'
-import { Button } from "../../components/button";
 import { ButtonPlus } from "../../components/buttonPlus";
 import { BsSearch } from "react-icons/bs";
 import { DocumentLine } from "../../components/documentLine";
+import { SideBar } from "../../components/sideBar";
 
 export function DocsManagement() {
     const [documentName, setDocumentName] = useState('');
@@ -14,22 +13,7 @@ export function DocsManagement() {
     }
     return(
         <div className={styles.container}>
-            <aside className={styles.leftBar}>
-                <div className={styles.figure}>
-                    <img className={styles.image} src={profileImg} alt="Foto de perfil" />
-                </div>
-                <div className={styles.person}>
-                    <p className={styles.name}>Giovanna Medeiros</p>
-                    <p className={styles.role}>Compliance Officer</p>
-                </div>
-                <div className={styles.buttons}>
-                    <Button value="Menu"/>
-                    <Button value="Gerenciamento de documentos"/>
-                    <Button value="Permissões"/>
-                    <Button value="Solicitações pendentes"/>
-                    <Button value="Treinamento Eureka"/>
-                </div>
-            </aside>
+            <SideBar page="management"/>
 
             <section className={styles.documents}>
                 <h1>Gerenciamento de documentos</h1>
