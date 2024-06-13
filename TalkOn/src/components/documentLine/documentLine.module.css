@@ -11,9 +11,10 @@ html {
 }
 
 .line {
+    /* border: 1px solid black; */
     border-top: 1px solid #a6a6a6;
     margin-left: 2rem;
-    width: 93rem;
+    width: 100%;
     display: flex;
     align-items: center;
     height: 7rem;
@@ -25,17 +26,17 @@ html {
 
 .line .lineId {
     position: absolute;
-    left: 43rem;
+    left: 23.8%;
 }
 
 .line .lineName {
     position: absolute;
-    left: 54rem;
+    left: 29%;
 }
 
 .line div {
     position: absolute;
-    left: 96.5rem;
+    left: 49.3%;
 }
 
 .line .image {
@@ -43,7 +44,7 @@ html {
     height: 3.5rem;
     border-radius: 1.88rem;
     position: absolute;
-    left: 120rem;
+    left: 61.3%;
 }
 
 .line:hover {

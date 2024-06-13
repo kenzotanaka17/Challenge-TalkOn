@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router-dom"
 import { Login } from "./pages/login"
 import { DocsManagement } from "./pages/docs-management";
 import { ErrorPage } from "./pages/error";
+import { Menu } from "./pages/menu";
+import { Permissions } from "./pages/permissions";
 
 const router = createBrowserRouter([
   {
@@ -10,7 +12,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/menu',
-    element: <DocsManagement />
+    element: <Menu />
   },
   {
     path: '/docs-management',
@@ -18,7 +20,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/permissions',
-    element: <DocsManagement />
+    element: <Permissions />
   },
   {
     path: '/requests',

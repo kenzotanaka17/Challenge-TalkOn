@@ -18,8 +18,9 @@ html {
 }
 
 .documents {
-    margin: 4.25rem 0 0 13rem;
-    width: 95rem;
+    /* border: 1px solid black; */
+    padding: 4rem 13rem;
+    width: 60%;
 }
 
 .documents h1 {
@@ -53,8 +54,14 @@ html {
     outline: 0;
 }
 
-.documents .line {
-    width: 93rem;
+.documents table {
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.line {
+    /* border: 1px solid black; */
+    width: 100%;
     display: flex;
     align-items: center;
     margin: 6rem 0 0 2rem;
@@ -66,28 +73,28 @@ html {
 }
 
 .line .lineId {
-    position: relative;
-    left: 2rem;
+    position: absolute;
+    left: 23.8%;
 }
 
 .line .lineName {
-    position: relative;
-    left: 10rem;
+    position: absolute;
+    left: 29%;
 }
 
 .line .linePerms {
-    position: relative;
-    left: 40rem;
+    position: absolute;
+    left: 45.8%;
 }
 
 .line .lineResponsible {
-    position: relative;
-    left: 50rem;
+    position: absolute;
+    left: 59%;
 }
 
 .selectedDocument {
-    width: 50rem;
-    margin-top: 7rem;
+    width: 25%;
+    margin-top: 5rem;
     display: flex;
     align-items: center;
     flex-direction: column;

@@ -23,27 +23,49 @@ export function DocsManagement() {
                         placeholder="Pesquisar documentos"
                     />
                 </label>
-                <div className={styles.line}>
+                {/* <div className={styles.line}>
                     <p className={styles.lineId}>ID</p>
                     <p className={styles.lineName}>Nome</p>
                     <p className={styles.linePerms}>Gerir permissões</p>
                     <p className={styles.lineResponsible}>Responsável</p>
-                </div>
-                <DocumentLine id="001" nome="Arquivos TI - Nível 5" onClick={handleDocumentClick}/>
-                <DocumentLine id="002" nome="Arquivos RH - Nível 1" onClick={handleDocumentClick}/>
-                <DocumentLine id="003" nome="Arquivos Normas - Nível 1" onClick={handleDocumentClick}/>
-                <DocumentLine id="004" nome="Arquivos Normas - Nível 2" onClick={handleDocumentClick}/>
-                <DocumentLine id="003" nome="Arquivos Normas - Nível 1" onClick={handleDocumentClick}/>
-                <DocumentLine id="003" nome="Arquivos Normas - Nível 1" onClick={handleDocumentClick}/>
-                <DocumentLine id="003" nome="Arquivos Normas - Nível 1" onClick={handleDocumentClick}/>
-                <DocumentLine id="003" nome="Arquivos Normas - Nível 1" onClick={handleDocumentClick}/>
-                <DocumentLine id="003" nome="Arquivos Normas - Nível 1" onClick={handleDocumentClick} />
-                <DocumentLine id="003" nome="Arquivos Normas - Nível 1" onClick={handleDocumentClick}/>
+                </div> */}
+                <table>
+                    <thead>
+                        <tr className={styles.line}>
+                            <td className={styles.lineId}>ID</td>
+                            <td className={styles.lineName}>Nome</td>
+                            <td className={styles.linePerms}>Gerir permissões</td>
+                            <td className={styles.lineResponsible}>Responsável</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <DocumentLine id="001" nome="Arquivos TI - Nível 5" onClick={handleDocumentClick}/>                        
+                        </tr>
+                        <tr>
+                        <DocumentLine id="002" nome="Arquivos RH - Nível 1" onClick={handleDocumentClick}/>
+                        </tr>
+                        <tr>
+                        <DocumentLine id="003" nome="Arquivos Normas - Nível 1" onClick={handleDocumentClick}/>
+                        </tr>
+                        <tr>
+                        <DocumentLine id="004" nome="Arquivos Normas - Nível 2" onClick={handleDocumentClick}/>
+                        </tr>
+                        <tr>
+                        <DocumentLine id="005" nome="Arquivos Normas - Nível 3" onClick={handleDocumentClick}/>
+                        </tr>
+                        <tr>
+                        <DocumentLine id="006" nome="Arquivos Normas - Nível 4" onClick={handleDocumentClick}/>
+                        </tr>
+                        <tr>
+                        <DocumentLine id="007" nome="Arquivos Normas - Nível 5" onClick={handleDocumentClick}/>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
 
             {documentName !== '' && (
                 <aside className={styles.selectedDocument}>
-                {/* Aqui vai a useState do documento selecionado */}
                     <h1>{documentName}</h1> 
                     <p>Funcionário <span className={styles.iconX}>X</span></p>
                     <ButtonPlus />
