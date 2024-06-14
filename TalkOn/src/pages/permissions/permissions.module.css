@@ -89,3 +89,15 @@ html {
     font-size: 1.8rem;
     text-align: center;
 }
+
+.employeeInfo {
+    margin-top: 10rem;
+    border: 1px solid black;
+    width: 60%;
+    display: flex;
+    height: 10vh;
+}
+
+.employeeInfo p {
+    width: 15rem;
+}

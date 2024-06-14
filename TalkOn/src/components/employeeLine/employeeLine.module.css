@@ -20,6 +20,7 @@ html {
     border-radius: 9rem 0 0 9rem;
 }
 
+.employee.active,
 .employee:hover {
     background-color: #a3b5be;
     cursor: pointer;

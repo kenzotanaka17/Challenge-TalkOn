@@ -4,12 +4,13 @@ export interface EmployeeProps {
     img: string,
     name: string,
     role: string,
-    onClick: (name : string, role : string, img : string) => void;
+    onClick: (name : string, role : string, img : string) => void,
+    isActive?: boolean
 }
 
 export function EmployeeLine(props : EmployeeProps) {
     return(
-        <div className={styles.employee} onClick={() => props.onClick(props.name, props.role, props.img)}>
+        <div className={`${styles.employee} ${props.isActive ? styles.active : ''}`} onClick={() => props.onClick(props.name, props.role, props.img)}>
             <div className={styles.image}>
                 <img src={props.img} alt={`Foto do funcionário ${props.name}`} />
             </div>

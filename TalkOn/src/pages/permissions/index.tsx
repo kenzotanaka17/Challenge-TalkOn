@@ -36,13 +36,13 @@ export function Permissions() {
                             placeholder="Pesquisar funcionários"
                         />
                     </label>
-                    <EmployeeLine img={alice} name='Alice Almeida' role='Designer Pleno' onClick={handleEmployeeClick}/>
-                    <EmployeeLine img={alvaro} name='Álvaro Bueno' role='Analista de suporte ao Cliente' onClick={handleEmployeeClick}/>
-                    <EmployeeLine img={amilton} name='Amilton Costa' role='Desenvolvedor Sênior' onClick={handleEmployeeClick}/>
-                    <EmployeeLine img={bruno} name='Bruno Machado' role='Técnico Farmacêutico' onClick={handleEmployeeClick}/>
-                    <EmployeeLine img={bianca} name='Bianca Vianna' role='Operadora de Esteira - Setor 13' onClick={handleEmployeeClick}/>
-                    <EmployeeLine img={carolina} name='Carolina Nakamura' role='Estagiária de Recursos Humanos' onClick={handleEmployeeClick}/>
-                    <EmployeeLine img={caroline} name='Caroline Figueiredo' role='Gestora Financeira' onClick={handleEmployeeClick}/>
+                    <EmployeeLine isActive={employeeName === 'Alice Almeida'} img={alice} name='Alice Almeida' role='Designer Pleno' onClick={handleEmployeeClick}/>
+                    <EmployeeLine isActive={employeeName === 'Álvaro Bueno'} img={alvaro} name='Álvaro Bueno' role='Analista de suporte ao Cliente' onClick={handleEmployeeClick}/>
+                    <EmployeeLine isActive={employeeName === 'Amilton Costa'} img={amilton} name='Amilton Costa' role='Desenvolvedor Sênior' onClick={handleEmployeeClick}/>
+                    <EmployeeLine isActive={employeeName === 'Bruno Machado'} img={bruno} name='Bruno Machado' role='Técnico Farmacêutico' onClick={handleEmployeeClick}/>
+                    <EmployeeLine isActive={employeeName === 'Bianca Vianna'} img={bianca} name='Bianca Vianna' role='Operadora de Esteira - Setor 13' onClick={handleEmployeeClick}/>
+                    <EmployeeLine isActive={employeeName === 'Carolina Nakamura'} img={carolina} name='Carolina Nakamura' role='Estagiária de Recursos Humanos' onClick={handleEmployeeClick}/>
+                    <EmployeeLine isActive={employeeName === 'Caroline Figueiredo'} img={caroline} name='Caroline Figueiredo' role='Gestora Financeira' onClick={handleEmployeeClick}/>
             </section>
             <section className={styles.employee}>
             {employeeName !== '' && (
@@ -51,7 +51,9 @@ export function Permissions() {
                     <h1>{employeeName}</h1> 
                     <p>{employeeRole}</p>
                     <div className={styles.employeeInfo}>
-
+                        <p>Designer <span><button>X</button></span></p>
+                        <p>Pleno <span><button>X</button></span></p>
+                        <p>Funcionário <span><button>X</button></span></p>
                     </div>
                     <ButtonPlus />
                 </aside>
