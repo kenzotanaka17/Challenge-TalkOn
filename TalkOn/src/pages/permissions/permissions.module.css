@@ -62,7 +62,6 @@ html {
 }
 
 .selectedEmployee {
-    border: 1px solid black;
     width: auto;
     margin-top: 9rem;
     display: flex;
