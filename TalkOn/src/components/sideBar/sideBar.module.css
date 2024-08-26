@@ -11,7 +11,7 @@ html {
 }
 
 .leftBar {
-    width: 15%;
+    width: auto;
     height: 100%;
     background-color: #002740;
 }
@@ -62,4 +62,5 @@ html {
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    width: 30rem;
 }

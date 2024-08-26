@@ -20,7 +20,7 @@ html {
 .documents {
     /* border: 1px solid black; */
     padding: 4rem 13rem;
-    width: 60%;
+    width: 110rem;
 }
 
 .documents h1 {
@@ -136,4 +136,16 @@ html {
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
+}
+
+@media (max-width: 1440px) {
+    .selectedDocument {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1360px) {
+    .documents {
+        max-width: 50rem;
+    }
 }

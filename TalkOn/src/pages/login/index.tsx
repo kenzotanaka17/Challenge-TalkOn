@@ -12,7 +12,7 @@ export function Login() {
 
   function onHandleLogin(e: FormEvent) {
     e.preventDefault();
-    if(email == 'giovanna.medeiros@eurofarma.com' && password == '123') {
+    if(email == 'teste' && password == '123') {
       navigate("/docs-management", {replace: true})
     }  else alert("Dados incorretos")
   }
