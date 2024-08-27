@@ -13,7 +13,7 @@ export function Login() {
   function onHandleLogin(e: FormEvent) {
     e.preventDefault();
     if(email == 'teste' && password == '123') {
-      navigate("/docs-management", {replace: true})
+      navigate("/menu", {replace: true})
     }  else alert("Dados incorretos")
   }
   

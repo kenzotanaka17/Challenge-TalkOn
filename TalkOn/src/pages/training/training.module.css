@@ -28,9 +28,23 @@ html {
 
 .chatBox h1 {
     font-family: "Inter", sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
+    font-weight: 800;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
+
+.chatBox h1 span {
+    display: flex;
+    align-items: center;
+}
+
+.chatBox h1 span img {
+    width: 2.5rem;
+    height: auto; 
+}
+
 
 .chatBox hr {
     height: 0.3rem;
@@ -39,31 +53,72 @@ html {
 }
 
 .chat {
-    border: 1px solid black;
-    min-height: 70vh;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     font-size: 2rem;
     width: 100%;
+    min-height: 70vh;
+    max-height: 70vh;
+    overflow-y: auto;
 }
 
+
 .user, .ai {
-    border: 1px solid black;
     padding: 1rem;
+    color: #ffffff;
     max-width: 60%;
+    padding: 1rem 3rem;
+    word-break: break-word;
 }
 
 .user {
-    border-radius: 3rem 3rem 0 3rem;
-    align-self: flex-end; /* Alinha o texto do usuário à direita */
-    background-color: #e0f7fa; /* Cor de fundo para distinguir */
-    text-align: right; /* Alinha o texto dentro do p à direita */
+    border-radius: 3rem 5rem 0.5rem 3rem;
+    align-self: flex-end;
+    background-color: #000000;
+    text-align: right; 
 }
 
 .ai {
-    border-radius: 3rem 3rem 3rem 0;
-    align-self: flex-start; /* Alinha o texto da AI à esquerda */
-    background-color: #f1f8e9; /* Cor de fundo para distinguir */
-    text-align: left; /* Alinha o texto dentro do p à esquerda */
+    border-radius: 5rem 3rem 3rem 0.5rem;
+    align-self: flex-start;
+    background-color: #002740;
+    text-align: left; 
+}
+
+.question {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.question textarea {
+    width: 100%;
+    padding: 1rem 9rem 1rem 2rem;
+    border-radius: 5rem 7rem 0.5rem 5rem;
+    border: 1px solid #999999;
+    font-size: 1.6rem;
+}
+
+.question textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.question button {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 1rem 2rem;
+    background-color: #002740;
+    border: none;
+    border-radius: 3rem 4rem 0.5rem 3rem;
+    color: #fff;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.question button:hover {
+    background-color: #001a33;
 }
