@@ -7,7 +7,7 @@
 }
 
 html {
-    font-size: 62,5%;
+    font-size: 62.5%;
 }
 
 .container {
@@ -85,33 +85,39 @@ html {
 .header {
     display: flex;
     flex-direction: row;
+    justify-content: space-between; /* Distribui os itens ao longo da linha */
     gap: 2rem;
     font-family: "Inter", sans-serif;
     font-size: 2rem;
     margin-bottom: 2rem;
+    padding: 0 2rem; /* Adiciona padding para espaçamento interno */
 }
 
+.id, .solicitacao, .setor, .data, .solicitante {
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: left;
+}
+
+/* Ajustes para cada item, se necessário */
 .id {
-    position: relative;
-    left: 3%;
+    flex-basis: 10%; /* Largura específica para ID */
 }
 
 .solicitacao {
-    position: relative;
-    left: 5%;
+    flex-basis: 40%; /* Largura específica para Solicitação */
 }
 
 .setor {
-    position: relative;
-    left: 35%;
+    flex-basis: 15%; /* Largura específica para Setor */
 }
 
 .data {
-    position: relative;
-    left: 45%;
+    flex-basis: 10%; /* Largura específica para Data */
+    text-align: right;
 }
 
 .solicitante {
-    position: relative;
-    left: 50%;
+    flex-basis: auto; /* Deixa o solicitante flexível */
+    text-align: right;
 }

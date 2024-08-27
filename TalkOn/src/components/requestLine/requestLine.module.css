@@ -7,36 +7,37 @@
 }
 
 html {
-    font-size: 62,5%;
+    font-size: 62.5%;
 }
 
 .container {
     display: flex;
     align-items: center;
-    flex-direction: row;
-    gap: 2rem;
+    justify-content: space-between;
+    gap: 1rem;
     font-family: "Inter", sans-serif;
     font-size: 2rem;
     height: 6rem;
+    padding: 0 2rem;
+    flex-wrap: wrap; /* Permite que os itens quebrem para uma nova linha se necessário */
 }
 
 .id {
-    position: relative;
-    left: 2%;
+    flex: 0 1 10%; /* Flexível, mas com base mínima de 10% */
+    min-width: 5rem; /* Define um mínimo para garantir que caiba em telas pequenas */
 }
 
 .solicitacao {
-    position: relative;
-    left: 3%;
+    flex: 1 1 40%; /* Flexível e com base mínima de 40% */
     max-width: 35rem;
-    text-wrap: nowrap;
-    text-overflow: ellipsis;
+    white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .setor {
-    position: relative;
-    left: 6%;
+    flex: 0 1 15%;
+    min-width: 10rem;
     background-color: #002740;
     display: flex;
     align-items: center;
@@ -48,21 +49,24 @@ html {
 }
 
 .data {
-    position: absolute;
-    left: 75%;
+    flex: 0 1 15%;
+    min-width: 10rem;
+    text-align: right;
 }
 
 .img {
-    position: absolute;
-    left: 85%;
-    width: 5rem;
+    flex: 0 0 5rem; /* Define a largura fixa da imagem */
+    height: 5rem; /* Define a altura fixa da imagem */
+    border-radius: 50%;
 }
 
 .mais {
-    position: absolute;
-    left: 95%;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 3rem; /* Define largura fixa para os três pontos */
+    height: 3rem; /* Define altura fixa para os três pontos */
 }
 
-.mais:hover {
-    cursor: pointer;
-}
