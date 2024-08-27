@@ -1,6 +1,5 @@
 import { BsSearch } from 'react-icons/bs'
-import { EmployeeLine, EmployeeProps } from '../../components/employeeLine'
-import { Input } from '../../components/input/input'
+import { EmployeeLine } from '../../components/employeeLine'
 import { SideBar } from '../../components/sideBar'
 import styles from './permissions.module.css'
 import alice from '../../assets/alice.png'
@@ -51,9 +50,9 @@ export function Permissions() {
                     <h1>{employeeName}</h1> 
                     <p>{employeeRole}</p>
                     <div className={styles.employeeInfo}>
-                        <p>Designer <span><button>X</button></span></p>
-                        <p>Pleno <span><button>X</button></span></p>
-                        <p>Funcionário <span><button>X</button></span></p>
+                        <p>Designer <span>X</span></p>
+                        <p>Pleno <span>X</span></p>
+                        <p>Funcionário <span>X</span></p>
                     </div>
                     <ButtonPlus />
                 </aside>
