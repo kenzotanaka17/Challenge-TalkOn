@@ -5,6 +5,7 @@ import { ErrorPage } from "./pages/error";
 import { Menu } from "./pages/menu";
 import { Permissions } from "./pages/permissions";
 import { PendingRequests } from "./pages/pending-requests";
+import { Training } from "./pages/training";
 
 const router = createBrowserRouter([
   {
@@ -29,7 +30,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/training',
-    element: <DocsManagement />
+    element: <Training />
   },
   {
     path: "*",
