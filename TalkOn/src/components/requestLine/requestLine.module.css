@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    height: 6rem;
+}
+
+.id {
+    position: relative;
+    left: 2%;
+}
+
+.solicitacao {
+    position: relative;
+    left: 3%;
+    max-width: 35rem;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.setor {
+    position: relative;
+    left: 6%;
+    background-color: #002740;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.data {
+    position: absolute;
+    left: 75%;
+}
+
+.img {
+    position: absolute;
+    left: 85%;
+    width: 5rem;
+}
+
+.mais {
+    position: absolute;
+    left: 95%;
+}
+
+.mais:hover {
+    cursor: pointer;
+}

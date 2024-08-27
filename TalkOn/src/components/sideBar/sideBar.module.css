@@ -12,7 +12,7 @@ html {
 
 .leftBar {
     width: auto;
-    height: 100%;
+    min-height: 130vh;
     background-color: #002740;
 }
 
