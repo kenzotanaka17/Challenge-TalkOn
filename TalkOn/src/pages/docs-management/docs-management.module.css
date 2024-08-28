@@ -11,16 +11,21 @@ html {
 }
 
 .container {
-    height: 120vh;
+    min-height: 120vh;
     background-color: #ffffff;
     display: flex;
+    flex-direction: row;
     width: 100%;
 }
 
+.section {
+    padding: 4rem 8rem;
+    width: 100%;
+    display: flex;
+}
+
 .documents {
-    /* border: 1px solid black; */
-    padding: 4rem 13rem;
-    width: 110rem;
+    width: 70%;
 }
 
 .documents h1 {
@@ -55,50 +60,49 @@ html {
 }
 
 .documents table {
-    /* border: 1px solid black; */
     width: 100%;
 }
 
 .line {
-    /* border: 1px solid black; */
     width: 100%;
     display: flex;
     align-items: center;
-    margin: 6rem 0 0 2rem;
+    margin-top: 6rem;
     height: 6rem;
     font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 2rem;
     line-height: 2.4rem;
+    position: relative;
 }
 
 .line .lineId {
     position: absolute;
-    left: 23.8%;
+    left: 0%;
 }
 
 .line .lineName {
     position: absolute;
-    left: 29%;
+    left: 20%;
 }
 
 .line .linePerms {
     position: absolute;
-    left: 45.8%;
+    left: 53%;
 }
 
 .line .lineResponsible {
     position: absolute;
-    left: 59%;
+    left: 80%;
 }
 
 .selectedDocument {
-    width: 25%;
-    margin-top: 5rem;
+    width: 30%;
     display: flex;
     align-items: center;
     flex-direction: column;
     border-left: 1px solid #e0e0e0;
+    text-align: center;
 }
 
 .selectedDocument h1 {
@@ -119,12 +123,11 @@ html {
     color: #ffffff;
     text-align: center;
     padding-left: 1.6rem;
-    gap: 1.6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.3rem;
-    margin-bottom: 11rem;
+    margin-bottom: 8rem;
 }
 
 .selectedDocument .iconX {
@@ -138,14 +141,76 @@ html {
     font-size: 1.5rem;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1360px) {
+    .documents {
+        width: 100%;
+    }
+
+    .documents label {
+        border-right: 1px solid #e0e0e0;
+        border-radius: 9rem;
+    }
+
+    .section {
+        flex-direction: column;
+    }
+
     .selectedDocument {
-        text-align: center;
+        border-left: none;
+        border-top: 1px solid #e0e0e0;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .selectedDocument h1 {
+        margin: 7rem 0 8rem 0;
+    }
+} 
+
+@media (max-width: 1120px) {
+    .lineId {
+        display: none;
+    }
+
+    .linePerms {
+        display: none;
+    }
+
+    .line .lineName {
+        position: static;
+    }
+
+    .line .lineResponsible {
+        position: static;
+    }
+
+    .line {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .label input {
+        font-size: 1.5rem;
     }
 }
 
-@media (max-width: 1360px) {
-    .documents {
-        max-width: 50rem;
+@media (max-width: 400px) {
+    .line {
+        font-size: 1.5rem;
+    }
+
+    label {
+        padding: 0;
+    }
+
+    .label input {
+        font-size: 1rem;
+    }
+
+    .bsSearch {
+        display: none;
     }
 }

@@ -15,20 +15,15 @@ export function DocsManagement() {
         <div className={styles.container}>
             <SideBar page="management"/>
 
-            <section className={styles.documents}>
+            <section className={styles.section}>
+            <div className={styles.documents}>
                 <h1>Gerenciamento de documentos</h1>
                 <label className={styles.label}>
-                    <BsSearch size={"2.5rem"} color="#828282"/>
+                    <BsSearch size={"2.5rem"} color="#828282" className={styles.bsSearch}/>
                     <input 
                         placeholder="Pesquisar documentos"
                     />
                 </label>
-                {/* <div className={styles.line}>
-                    <p className={styles.lineId}>ID</p>
-                    <p className={styles.lineName}>Nome</p>
-                    <p className={styles.linePerms}>Gerir permissões</p>
-                    <p className={styles.lineResponsible}>Responsável</p>
-                </div> */}
                 <table>
                     <thead>
                         <tr className={styles.line}>
@@ -62,8 +57,7 @@ export function DocsManagement() {
                         </tr>
                     </tbody>
                 </table>
-            </section>
-
+            </div>
             {documentName !== '' && (
                 <aside className={styles.selectedDocument}>
                     <h1>{documentName}</h1> 
@@ -71,6 +65,9 @@ export function DocsManagement() {
                     <ButtonPlus />
                 </aside>
                 )}
+            </section>
+
+            
         </div>
     )
 }
