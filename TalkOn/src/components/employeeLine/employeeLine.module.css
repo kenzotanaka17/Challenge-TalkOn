@@ -53,23 +53,13 @@ html {
 }
 
 @media (max-width: 1040px) {
-    .employee {
-        height: 7rem;
-        gap: 3rem;
-        padding-left: 1rem;
-    }
-
-    .image img{
-        width: 5rem;
-        height: 5rem;
-    }
 
     .employeeInfo {
         gap: 0.2rem;
     }
 
     .employeeInfo h2 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -78,11 +68,12 @@ html {
         height: 6rem;
         gap: 2rem;
         margin-top: 1rem;
+        padding-left: 1.2rem;
     }
 
     .image img{
-        width: 4.5rem;
-        height: 4.5rem;
+        width: 4rem;
+        height: 4rem;
     }
 
     .employeeInfo h2 {

@@ -29,7 +29,7 @@ html {
     height: 100%;
 }
 
-.perm h1 {
+.perm .titlePerm {
     font-family: "Inter", sans-serif;
     font-weight: 800;
     font-size: 3rem;
@@ -140,8 +140,8 @@ html {
 
 @media (max-width: 1040px) {
     .perm h1 {
-        font-size: 2rem;
-    }
+        font-size: 2.5rem;
+    }   
 }
 
 @media (max-width: 720px) {
@@ -191,6 +191,8 @@ html {
     .perm h1 {
         font-size: 1.3rem;
         line-height: 1;
+        font-family: "Inter", sans-serif;
+    font-weight: 800;
     }
 
     .selectedEmployee {
@@ -203,17 +205,26 @@ html {
         height: 15rem;
     }
 
+    .selectedEmployee h1 {
+        font-size: 1.8rem;
+    }
+
+    .selectedEmployee p {
+        font-size: 1.3rem;
+    }
+
     .employeeInfo {
         margin-top: 4rem;
     }
     
     .employeeInfo p {
         width: 13rem;
+        font-size: 1rem;
     }
     
     .employeeInfo p span {
-        width: 4rem;
-        height: 4rem;
+        width: 4.5rem;
+        height: 4.5rem;
     }
 
 }

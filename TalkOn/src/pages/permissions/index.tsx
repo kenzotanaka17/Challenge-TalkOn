@@ -29,7 +29,7 @@ export function Permissions() {
 
             <div className={styles.permissions}>
             <section className={styles.perm}>
-                <h1>Permissões</h1>
+                <h1 className={styles.titlePerm}>Permissões</h1>
                     <label className={styles.label}>
                         <BsSearch size={"2.5rem"} color="#828282"/>
                         <input 
@@ -48,7 +48,7 @@ export function Permissions() {
             {employeeName !== '' && (
                 <aside className={styles.selectedEmployee}>
                     <img src={employeeImg} alt="Imagem do funcionário" />
-                    <h1>{employeeName}</h1> 
+                    <h1 >{employeeName}</h1> 
                     <p>{employeeRole}</p>
                     <div className={styles.employeeInfo}>
                         <p>Designer <span>X</span></p>
