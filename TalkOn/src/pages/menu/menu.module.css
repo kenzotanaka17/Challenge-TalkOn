@@ -11,16 +11,14 @@ html {
 }
 
 .container {
-    height: 120vh;
+    min-height: 120vh;
     background-color: #ffffff;
     display: flex;
-    width: 100%;
 }
 
 .lastAct {
-    width: 85%;
-    height: 100%;
-    padding: 4rem 13rem;
+    width: 100%;
+    padding: 4rem 5%;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -70,4 +68,32 @@ html {
     width: 7rem;
     height: 7rem;
     border-radius: 50%;
+}
+
+@media(max-width: 600px ) {
+
+    .lastAct {
+        padding: 2rem 6rem;
+    }
+
+}
+
+@media(max-width: 420px) {
+    .lastAct {
+        padding: 2rem 3rem;
+    }
+
+    .box h2 {
+        font-size: 1.8rem;
+    }
+    
+    .box p {
+        font-size: 1.3rem;
+    }
+    
+    .box span {
+        font-size: 2rem;
+        width: 5rem;
+        height: 5rem;
+    }
 }

@@ -15,13 +15,13 @@ html {
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
-    width: 100%;
 }
 
 .section {
-    padding: 4rem 8rem;
     width: 100%;
     display: flex;
+    padding: 4rem 5%;
+    box-sizing: border-box; 
 }
 
 .documents {
@@ -141,6 +141,85 @@ html {
     font-size: 1.5rem;
 }
 
+.addButton {
+    margin-top: 2rem;
+    background-color: #486b7d;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 40rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.modalContent h2 {
+    margin-bottom: 2rem;
+    font-family: "Inter", sans-serif;
+}
+
+.modalContent input {
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.modalContent input:hover {
+    cursor: pointer;
+}
+
+.modalContent button {
+    padding: 0.75rem 0;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #486b7d;
+    color: white;
+    width: 30rem;
+    align-self: center;
+}
+
+.btns {
+    max-width: 30rem;
+    align-self: center;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btns button {
+    padding: 0.75rem 2rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #486b7d;
+    color: white;
+}
+
 @media (max-width: 1360px) {
     .documents {
         width: 100%;
@@ -192,6 +271,10 @@ html {
 }
 
 @media (max-width: 520px) {
+    .container {
+        display: block;
+    }
+    
     .label input {
         font-size: 1.5rem;
     }

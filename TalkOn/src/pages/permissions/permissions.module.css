@@ -11,16 +11,22 @@ html {
 }
 
 .container {
-    height: 120vh;
+    min-height: 120vh;
     background-color: #ffffff;
     display: flex;
+}
+
+.permissions {
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    padding: 4rem 5%;
+    box-sizing: border-box; 
 }
 
 .perm {
-    width: 40%;
+    width: 50%;
     height: 100%;
-    padding: 4rem 0 4rem 13rem;
 }
 
 .perm h1 {
@@ -57,7 +63,7 @@ html {
 
 .employee {
     border-left: 2px solid #e0e0e0;
-    width: 45%;
+    width: 50%;
     margin-top: 4rem;
 }
 
@@ -73,6 +79,9 @@ html {
 .selectedEmployee img {
     width: 24rem;
     height: 24rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
 }
 
 .selectedEmployee h1 {
@@ -90,7 +99,7 @@ html {
 }
 .employeeInfo {
     margin-top: 10rem;
-    width: 70%;
+    width: 80%;
     height: 20vh;
     display: flex;
     align-items: center;
@@ -127,4 +136,84 @@ html {
 
 .employeeInfo p span:hover {
     cursor: pointer;
+}
+
+@media (max-width: 1040px) {
+    .perm h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 720px) {
+    .employee {
+        margin-top: 1rem;
+    }
+    
+    .selectedEmployee {
+        width: auto;
+        margin-top: 5rem;
+        gap: 2rem;
+    }
+    
+    .selectedEmployee img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .employeeInfo {
+        margin-top: 5rem;
+    }
+    
+    .employeeInfo p {
+        width: 15rem;
+        font-size: 1rem;
+    }
+    
+    .employeeInfo p span {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .label input {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .container {
+        display: block;
+    }
+
+    .label input {
+        font-size: 1rem;
+    }
+
+    .perm h1 {
+        font-size: 1.3rem;
+        line-height: 1;
+    }
+
+    .selectedEmployee {
+        margin-top: 3rem;
+        gap: 1rem;
+    }
+    
+    .selectedEmployee img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .employeeInfo {
+        margin-top: 4rem;
+    }
+    
+    .employeeInfo p {
+        width: 13rem;
+    }
+    
+    .employeeInfo p span {
+        width: 4rem;
+        height: 4rem;
+    }
+
 }
