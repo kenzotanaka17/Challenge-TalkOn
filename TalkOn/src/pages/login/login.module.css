@@ -84,3 +84,88 @@ html {
     cursor: pointer;
 }
 
+@media (max-width: 600px) {
+    .loginBox {
+        width: 35rem;
+        height: 35rem;
+    }
+
+    .loginBox .title {
+        font-size: 4rem;
+        line-height: 3rem;
+    }
+    
+    .loginBox .subtitle {
+        font-size: 1rem;
+        line-height: 1rem;
+        letter-spacing: 0.7rem;
+    }
+    
+    .loginBox form {
+        gap: 1rem;
+    }
+
+    .form input {
+        width: 25rem;
+    }
+    
+    .form label {
+        font-size: 1rem;
+        line-height: 1rem;
+        letter-spacing: 0.2rem;
+    }
+    
+    .form button {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .loginBox {
+        width: 30rem;
+        height: 30rem;
+    }
+
+    .loginBox .title {
+        font-size: 3rem;
+    }
+    
+    .loginBox .subtitle {
+        letter-spacing: 0.4rem;
+    }
+
+    .form input {
+        width: 23rem;
+        height: 4rem;
+    }
+    
+    .form button {
+        font-size: 1.1rem;
+        height: 4rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .loginBox {
+        width: 25rem;
+        height: 25rem;
+    }
+
+    .loginBox .title {
+        font-size: 2rem;
+    }
+    
+    .loginBox .subtitle {
+        letter-spacing: 0.1rem;
+    }
+
+    .form input {
+        width: 20rem;
+        height: 3rem;
+    }
+    
+    .form button {
+        font-size: 1rem;
+        height: 3rem;
+    }
+}

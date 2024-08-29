@@ -27,14 +27,10 @@ html {
     transition: .1s;
 }
 
-.image {
-    display: flex;
-    width: 7rem;
-    height: 7rem;
-}
-
 .image img {
     border-radius: 6rem;
+    width: 7rem;
+    height: 7rem;
 }
 
 .employeeInfo {
@@ -54,4 +50,33 @@ html {
     font-weight: 300;
     font-size: 1.8rem;
     color: #454545;
+}
+
+@media (max-width: 1040px) {
+
+    .employeeInfo {
+        gap: 0.2rem;
+    }
+
+    .employeeInfo h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .employee {
+        height: 6rem;
+        gap: 2rem;
+        margin-top: 1rem;
+        padding-left: 1.2rem;
+    }
+
+    .image img{
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .employeeInfo h2 {
+        font-size: 1rem;
+    }
 }

@@ -11,9 +11,7 @@ html {
 }
 
 .line {
-    /* border: 1px solid black; */
     border-top: 1px solid #a6a6a6;
-    margin-left: 2rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -22,21 +20,22 @@ html {
     font-weight: 500;
     font-size: 2rem;
     line-height: 2.4rem;
+    position: relative;
 }
 
 .line .lineId {
     position: absolute;
-    left: 23.8%;
+    left: 0%;
 }
 
 .line .lineName {
     position: absolute;
-    left: 29%;
+    left: 10%;
 }
 
 .line div {
     position: absolute;
-    left: 49.3%;
+    left: 63%;
 }
 
 .line .image {
@@ -44,11 +43,41 @@ html {
     height: 3.5rem;
     border-radius: 1.88rem;
     position: absolute;
-    left: 61.3%;
+    left: 85%;
 }
 
 .line:hover {
     cursor: pointer;
     background-color: #a3b5be;
     transition: .1s;
+}
+
+@media (max-width: 1120px) {
+    .lineId {
+        display: none;
+    }
+
+    .line div {
+        display: none;
+    }
+
+    .line .lineName {
+        left: 0%;
+    }
+
+    .line .lineResponsible {
+        left: 80%;
+    }
+}
+
+@media (max-width: 520px) {
+    .line {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .line {
+        font-size: 1.2rem;
+    }
 }

@@ -11,19 +11,25 @@ html {
 }
 
 .container {
-    height: 120vh;
+    min-height: 120vh;
     background-color: #ffffff;
     display: flex;
+}
+
+.permissions {
+    display: flex;
+    flex-direction: row;
     width: 100%;
+    padding: 4rem 5%;
+    box-sizing: border-box; 
 }
 
 .perm {
-    width: 40%;
+    width: 50%;
     height: 100%;
-    padding: 4rem 0 4rem 13rem;
 }
 
-.perm h1 {
+.perm .titlePerm {
     font-family: "Inter", sans-serif;
     font-weight: 800;
     font-size: 3rem;
@@ -57,7 +63,7 @@ html {
 
 .employee {
     border-left: 2px solid #e0e0e0;
-    width: 45%;
+    width: 50%;
     margin-top: 4rem;
 }
 
@@ -73,6 +79,9 @@ html {
 .selectedEmployee img {
     width: 24rem;
     height: 24rem;
+    border-radius: 50%;
+    border: none;
+    outline: none;
 }
 
 .selectedEmployee h1 {
@@ -88,15 +97,134 @@ html {
     font-size: 1.8rem;
     text-align: center;
 }
-
 .employeeInfo {
     margin-top: 10rem;
-    border: 1px solid black;
-    width: 60%;
+    width: 80%;
+    height: 20vh;
     display: flex;
-    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .employeeInfo p {
-    width: 15rem;
+    background-color: #a3b5be;
+    padding: 1.5rem 2rem;
+    width: 20rem;
+    border-radius: 5rem;
+    color: white;
+    text-align: left;
+    position: relative;
+}
+
+.employeeInfo p span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid #6c8897;
+    background-color: #6c8897;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 5rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.employeeInfo p span:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 1040px) {
+    .perm h1 {
+        font-size: 2.5rem;
+    }   
+}
+
+@media (max-width: 720px) {
+    .employee {
+        margin-top: 1rem;
+    }
+    
+    .selectedEmployee {
+        width: auto;
+        margin-top: 5rem;
+        gap: 2rem;
+    }
+    
+    .selectedEmployee img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .employeeInfo {
+        margin-top: 5rem;
+    }
+    
+    .employeeInfo p {
+        width: 15rem;
+        font-size: 1rem;
+    }
+    
+    .employeeInfo p span {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .label input {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .container {
+        display: block;
+    }
+
+    .label input {
+        font-size: 1rem;
+    }
+
+    .perm h1 {
+        font-size: 1.3rem;
+        line-height: 1;
+        font-family: "Inter", sans-serif;
+    font-weight: 800;
+    }
+
+    .selectedEmployee {
+        margin-top: 3rem;
+        gap: 1rem;
+    }
+    
+    .selectedEmployee img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .selectedEmployee h1 {
+        font-size: 1.8rem;
+    }
+
+    .selectedEmployee p {
+        font-size: 1.3rem;
+    }
+
+    .employeeInfo {
+        margin-top: 4rem;
+    }
+    
+    .employeeInfo p {
+        width: 13rem;
+        font-size: 1rem;
+    }
+    
+    .employeeInfo p span {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
 }

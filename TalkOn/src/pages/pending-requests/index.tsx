@@ -2,7 +2,7 @@ import { BsFilter, BsSearch } from 'react-icons/bs'
 import { SideBar } from '../../components/sideBar'
 import styles from './pending-requests.module.css'
 import { RequestLine } from '../../components/requestLine'
-import alice from '../../assets/alice.png'
+import alice from '../../assets/AliceA.jpg'
 
 export function PendingRequests() {
     return(

@@ -13,31 +13,29 @@ html {
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
     font-family: "Inter", sans-serif;
     font-size: 2rem;
     height: 6rem;
-    padding: 0 2rem;
-    flex-wrap: wrap; /* Permite que os itens quebrem para uma nova linha se necessário */
+    flex-wrap: wrap;
+    position: relative;
 }
 
 .id {
-    flex: 0 1 10%; /* Flexível, mas com base mínima de 10% */
-    min-width: 5rem; /* Define um mínimo para garantir que caiba em telas pequenas */
+    position: absolute;
+    left: 0%;
 }
 
 .solicitacao {
-    flex: 1 1 40%; /* Flexível e com base mínima de 40% */
     max-width: 35rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    position: absolute;
+    left: 8%;
 }
 
 .setor {
-    flex: 0 1 15%;
-    min-width: 10rem;
+    min-width: 5rem;
     background-color: #002740;
     display: flex;
     align-items: center;
@@ -46,27 +44,105 @@ html {
     color: white;
     font-size: 1.5rem;
     padding: 1rem;
+    position: absolute;
+    left: 50%;
 }
 
 .data {
-    flex: 0 1 15%;
-    min-width: 10rem;
-    text-align: right;
+    position: absolute;
+    left: 65%;
 }
 
 .img {
-    flex: 0 0 5rem; /* Define a largura fixa da imagem */
-    height: 5rem; /* Define a altura fixa da imagem */
+    position: absolute;
+    left: 81%;
+    height: 5rem;
     border-radius: 50%;
 }
 
 .mais {
-    flex: 0 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    width: 3rem; /* Define largura fixa para os três pontos */
-    height: 3rem; /* Define altura fixa para os três pontos */
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    right: 0%;
 }
 
+
+@media (max-width: 1241px) {
+    .id {
+        display: none;
+    }
+
+    .data {
+        display: none;
+    }
+
+    .solicitacao {
+        left: 0%;
+    }
+
+    .setor {
+        left: 65%;
+    }
+
+    .img {
+        left: 87%;
+    }
+
+    .mais {
+        display: none;
+    }
+} 
+
+@media ( max-width: 1040px) {
+    .img {
+        left: 83%;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .container {
+        font-size: 1.5rem;
+    }
+
+    .solicitacao {
+        max-width: 25rem;
+    }
+
+    .setor {
+        left: 60%;
+    }
+}
+
+@media (max-width: 625px) {
+    .solicitacao {
+        max-width: 22rem;
+    }
+}
+
+@media (max-width: 530px) {
+    .solicitacao {
+        max-width: 20rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .setor {
+        min-width: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .img {
+        height: 2.5rem;
+        left: 85%;
+    }
+
+    .solicitacao {
+        max-width: 15rem;
+    }
+}
