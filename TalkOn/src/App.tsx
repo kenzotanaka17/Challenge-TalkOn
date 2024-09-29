@@ -6,6 +6,7 @@ import { Menu } from "./pages/menu";
 import { Permissions } from "./pages/permissions";
 import { PendingRequests } from "./pages/pending-requests";
 import { Training } from "./pages/training";
+import { Chat } from "./pages/chat";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: '/training',
     element: <Training />
+  },
+  {
+    path: '/trainingAdm',
+    element: <Chat />
   },
   {
     path: "*",

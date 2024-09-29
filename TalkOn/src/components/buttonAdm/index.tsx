@@ -1,0 +1,15 @@
+import styles from './button.module.css'
+
+interface ButtonProps {
+    value: string,
+    isActive?: boolean;
+}
+export function ButtonAdm( props : ButtonProps) {
+
+    return(
+        <button className={`${styles.button} ${props.isActive ? styles.active : ''}`} >
+            {props.value}
+        </button>
+    )
+
+}

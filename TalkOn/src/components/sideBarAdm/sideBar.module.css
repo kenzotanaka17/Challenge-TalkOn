@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%;
+}
+
+.leftBar {
+    width: auto;
+    min-height: 130vh;
+    background-color: #a7c2b6;
+}
+
+.figure {
+    height: 27rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    border-radius: 0.5rem;
+    width: 18.5rem;
+    height: 18.5rem;
+}
+
+.person {
+    width: 100%;
+    height: 10rem;
+    background-color: #64746d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 6rem;
+}
+
+.name {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.96rem;
+    color: #000000;
+}
+
+.role {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.68rem;
+    color: #ffffff;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 30rem;
+}

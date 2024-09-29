@@ -12,9 +12,11 @@ export function Login() {
 
   function onHandleLogin(e: FormEvent) {
     e.preventDefault();
-    if(email == 'teste' && password == '123') {
+    if(email == 'user' && password == '123') {
       navigate("/menu", {replace: true})
-    }  else alert("Dados incorretos")
+    }  else if(email == 'adm' && password == '123') {
+      navigate("/trainingAdm", {replace: true})
+    } else alert("Dados incorretos")
   }
   
   return (
