@@ -1,15 +1,17 @@
-import { createBrowserRouter } from "react-router-dom"
-import { Login } from "./pages/login"
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Login } from "./pages/login";
 import { DocsManagement } from "./pages/docs-management";
 import { ErrorPage } from "./pages/error";
 import { Menu } from "./pages/menu";
 import { Permissions } from "./pages/permissions";
 import { PendingRequests } from "./pages/pending-requests";
 import { Training } from "./pages/training";
+import { Chat } from "./pages/chat";
+import Private from './routes/private';
 
-const router = createBrowserRouter([
+export const router = createBrowserRouter([
   {
-    path:'/',
+    path: '/',
     element: <Login />
   },
   {
@@ -33,9 +35,19 @@ const router = createBrowserRouter([
     element: <Training />
   },
   {
+    path: '/trainingAdm',
+    element: (
+      <Private>
+        <Chat />
+      </Private>
+    ),
+  },
+  {
     path: "*",
     element: <ErrorPage />
   }
-]) 
+]);
 
-export { router };
+export const App = () => (
+  <RouterProvider router={router} />
+);
