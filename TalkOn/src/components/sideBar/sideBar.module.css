@@ -12,7 +12,7 @@ html {
 
 .leftBar {
     width: 30rem;
-    min-height: 130vh;
+    min-height: auto;
     background-color: #002740;
     transition: transform 0.3s ease;
     overflow-y: auto;
