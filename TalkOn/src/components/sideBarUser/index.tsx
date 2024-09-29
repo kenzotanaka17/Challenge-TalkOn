@@ -2,7 +2,7 @@ import { ButtonAdm } from '../buttonAdm'
 import styles from './sideBar.module.css'
 import profileImg from '../../assets/profileImg.png'
 
-export function SideBarAdm() {
+export function SideBarUser() {
 
     return (
         <aside className={styles.leftBar}>

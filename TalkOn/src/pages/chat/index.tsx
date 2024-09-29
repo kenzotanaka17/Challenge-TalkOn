@@ -1,5 +1,5 @@
 import { FormEvent, useState } from 'react'
-import { SideBarAdm } from '../../components/sideBarAdm'
+import { SideBarUser } from '../../components/sideBarUser'
 import styles from './chat.module.css'
 import logo from '../../assets/talkon.png'
 
@@ -17,7 +17,7 @@ export function Chat() {
 
     return (
         <div className={styles.container}>
-            <SideBarAdm />
+            <SideBarUser />
             <section className={styles.chatBox}>
                 <h1><span><img src={logo} alt="Logo eureka" /></span>Eureka</h1>
                 <hr />

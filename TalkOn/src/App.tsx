@@ -16,31 +16,47 @@ export const router = createBrowserRouter([
   },
   {
     path: '/menu',
-    element: <Menu />
+    element: (
+      <Private>
+       <Menu />
+      </Private>
+    ),
   },
   {
     path: '/docs-management',
-    element: <DocsManagement />
+    element: (
+      <Private>
+       <DocsManagement />
+      </Private>
+    ),
   },
   {
     path: '/permissions',
-    element: <Permissions />
+    element: (
+      <Private>
+       <Permissions />
+      </Private>
+    ),
   },
   {
     path: '/requests',
-    element: <PendingRequests />
+    element: (
+      <Private>
+       <PendingRequests />
+      </Private>
+    ),
   },
   {
     path: '/training',
-    element: <Training />
-  },
-  {
-    path: '/trainingAdm',
     element: (
       <Private>
-        <Chat />
+       <Training />
       </Private>
     ),
+  },
+  {
+    path: '/chat',
+    element:  <Chat />
   },
   {
     path: "*",

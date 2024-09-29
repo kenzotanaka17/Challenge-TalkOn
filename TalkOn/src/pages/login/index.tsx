@@ -14,10 +14,10 @@ export function Login() {
     e.preventDefault();
     if (email === 'user' && password === '123') {
       setIsAdmin(false);
-      navigate("/menu", { replace: true });
+      navigate("/chat", { replace: true });
     } else if (email === 'adm' && password === '123') {
       setIsAdmin(true);
-      navigate("/trainingAdm", { replace: true });
+      navigate("/menu", { replace: true });
     } else {
       alert("Dados incorretos");
     }
@@ -27,7 +27,6 @@ export function Login() {
     <div className={styles.container}>
       <div className={styles.loginBox}>
         <h1 className={styles.title}>TalkOn</h1>
-        <h2 className={styles.subtitle}>Management</h2>
 
         <form onSubmit={onHandleLogin} className={styles.form}>
           <Input
