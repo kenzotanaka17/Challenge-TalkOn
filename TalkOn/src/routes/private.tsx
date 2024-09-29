@@ -6,7 +6,7 @@ const Private: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const { isAdmin } = useAuth();
 
   if (!isAdmin) {
-    return <Navigate to="/menu" />;
+    return <Navigate to="/chat" />;
   }
 
   return <>{children}</>;
