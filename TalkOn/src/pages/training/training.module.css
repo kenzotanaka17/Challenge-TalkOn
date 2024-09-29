@@ -11,7 +11,7 @@ html {
 }
 
 .container {
-    height: 120vh;
+    height: auto;
     background-color: #ffffff;
     display: flex;
     width: 100%;
