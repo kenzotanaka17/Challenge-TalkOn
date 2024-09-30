@@ -59,21 +59,10 @@ app.post('/chat', async (req, res) => {
     } else {
       context = 'No relevant documents found.';
     }
+  
+    const response = await chatbot(userMessage, context);
 
-    
-    const qaInput = {
-      question: userMessage,
-      context: context,
-    };
-
-    
-    const response = await chatbot({"inputs":{
-        "question": userMessage,
-        "context": context
-    }});
-
-    
-    const assistantReply = JSON.stringify(response.json());
+    const assistantReply = response.answer;
     console.log('Assistant reply: ', assistantReply);
 
     res.send({ response: assistantReply });

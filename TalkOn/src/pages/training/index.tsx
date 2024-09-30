@@ -60,7 +60,7 @@ export function Training() {
 
   return (
     <div className={styles.container}>
-      <SideBar page="training" />
+      <SideBar page="training"/>
       <section className={styles.chatBox}>
         <h1>
           <span>
@@ -76,18 +76,18 @@ export function Training() {
               {message.content}
             </p>
           ))}
-          {isLoading && <p className={styles.assistant}>Eureka is typing...</p>}
+          {isLoading && <p className={styles.assistant}>Eureka esta digitando...</p>}
           {error && <p className={styles.error}>{error}</p>}
         </div>
         <form className={styles.question} onSubmit={handleSubmit}>
           <textarea
-            placeholder="Ask Eureka!"
+            placeholder="Pergunte para a Eureka!"
             value={input}
             onChange={(e) => setInput(e.target.value)}
             disabled={isLoading}
           />
           <button type="submit" disabled={isLoading || input.trim() === ''}>
-            Send
+            Enviar
           </button>
         </form>
       </section>
