@@ -122,3 +122,23 @@ html {
 .question button:hover {
     background-color: #001a33;
 }
+
+.assistant {
+    text-align: left;
+    background-color: #e8f5e9; 
+    color: #1b5e20;            
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+    max-width: 70%;
+    align-self: flex-start;
+  }
+  
+  
+  .error {
+    text-align: center;
+    background-color: #ffebee; 
+    color: #c62828;           
+    border-radius: 5px;
+    margin: 5px;
+  }
